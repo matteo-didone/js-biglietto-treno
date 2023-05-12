@@ -1,6 +1,6 @@
 // Creating basic variables by asking the user
-let numberOfKilometers = parseInt(prompt("How many kilometers do you want to run?"));
-let userAge = parseInt(prompt("How old are you?"));
+const numberOfKilometers = parseInt(prompt("How many kilometers do you want to run?"));
+const userAge = parseInt(prompt("How old are you?"));
 
 if
 (numberOfKilometers <= 0 || userAge <= 0 || isNaN(numberOfKilometers) || isNaN(userAge))
@@ -31,8 +31,8 @@ if (userAge < 18)
 
 
 // Create message
-let messageKilometersAndAge = "Just to recap, you want to run for " + numberOfKilometers + " kilometers and you are " + userAge + " years old" + "\n" + "The price of your ticket is going to be " + ticketPrice + "€";
-let messageWrongParameters = "Because the parameters you provided were not valid, we couldn't calculate the price of your ticket";
+const messageKilometersAndAge = "Just to recap, you want to run for " + numberOfKilometers + " kilometers and you are " + userAge + " years old" + "\n" + "The price of your ticket is going to be " + ticketPrice + "€";
+const messageWrongParameters = "Because the parameters you provided were not valid, we couldn't calculate the price of your ticket";
 
 // Display message regarding kilometers, age and potential discount
 if(numberOfKilometers > 0 && userAge > 0 && !isNaN(numberOfKilometers) && !isNaN(userAge))
