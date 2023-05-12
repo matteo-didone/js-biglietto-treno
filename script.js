@@ -19,12 +19,16 @@ if (userAge < 18)
     ticketPrice -= ticketPrice * discountAmount; // Calculating the price of the ticket with the discount
     ticketPrice = ticketPrice.toFixed(2); // Rounding the price of the ticket to 2 decimals
     alert("Because you are under 18 years old, you get a 20% discount on your ticket price!");
-} else if (userAge > 65) {
+} 
+else if (userAge > 65) 
+{
     discountAmount = 0.40; // 40% discount
     ticketPrice -= ticketPrice * discountAmount; // Calculating the price of the ticket with the discount
     ticketPrice = ticketPrice.toFixed(2); // Rounding the price of the ticket to 2 decimals
     alert("Because you are over 65 years old, you get a 40% discount on your ticket price!");
-} else if (userAge >= 18 && userAge <= 65) {
+} 
+else if (userAge >= 18 && userAge <= 65) 
+{
     ticketPrice = ticketPrice.toFixed(2); // Rounding the price of the ticket to 2 decimals
     alert("Because you are between 18 and 65 years old, you don't get any discount on your ticket price.");
 }
